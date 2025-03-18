@@ -1,11 +1,15 @@
 # Add Two Numbers in Python
 # Author:fanchenxuan
-# Using user input
+# Using a function
 
-#Taking user input
-a = input("First number: ")
-b = input("Second number: ")
+# function to add two numbers
+def add(a,b):
+	#converting input to float and adding	
+	res=float(a)+float(b)
+	return res
 
-#converting input to float and adding
-res = float(a) + float(b)
-print(res)
+#taking user input
+a=input("First number: ")
+b=input("Second number: ")
+result=add(a,b)
+print("the answer is ",result)
